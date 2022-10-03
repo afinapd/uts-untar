@@ -21,12 +21,12 @@ class _SearchScreenState extends State<SearchScreen> {
             color: Colors.black,
             child: Padding(
               padding:
-                  const EdgeInsets.symmetric(horizontal: 15.0, vertical: 15),
+                  const EdgeInsets.symmetric(horizontal: 5.0, vertical: 15),
               child: Container(
                 width: double.infinity - 30,
-                height: 45,
+                height: 40,
                 decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(7),
+                    borderRadius: BorderRadius.circular(10),
                     color: textFieldBackground),
                 child: TextField(
                   decoration: InputDecoration(
@@ -58,7 +58,7 @@ class _SearchScreenState extends State<SearchScreen> {
                 itemBuilder: (_, index) => Container(
                   decoration: BoxDecoration(
                       image: DecorationImage(
-                          image: NetworkImage(searchImage[index]),
+                          image: AssetImage(searchImage[index]),
                           fit: BoxFit.cover)),
                 ),
                 itemCount: searchImage.length,
