@@ -64,6 +64,11 @@ flutter:
   uses-material-design: true
   assets:
     - assets/images/
+    - assets/images/profiles/
+    - assets/images/posts/
+    - assets/images/stories/
+    - assets/images/search/
+    - assets/images/shop/
   fonts:
     - family: Billabong
       fonts:
