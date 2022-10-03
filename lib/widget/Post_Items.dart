@@ -35,8 +35,7 @@ class PostItems extends StatelessWidget {
                           decoration: BoxDecoration(
                               shape: BoxShape.circle,
                               image: DecorationImage(
-                                  image:
-                                      NetworkImage(posts[index]['profileImg']),
+                                  image: AssetImage(posts[index]['profileImg']),
                                   fit: BoxFit.cover)),
                         ),
                         SizedBox(
@@ -51,7 +50,8 @@ class PostItems extends StatelessWidget {
                         ),
                       ],
                     ),
-                    SvgPicture.asset('assets/images/vertical_ellipsis_icon.svg',
+                    SvgPicture.asset(
+                      'assets/images/vertical_ellipsis_icon.svg',
                       height: 25,
                     ),
                   ],
@@ -64,7 +64,7 @@ class PostItems extends StatelessWidget {
                 height: 400.0,
                 decoration: BoxDecoration(
                     image: DecorationImage(
-                        image: NetworkImage(posts[index]['postImg']),
+                        image: AssetImage(posts[index]['postImg']),
                         fit: BoxFit.cover)),
               ),
               SizedBox(

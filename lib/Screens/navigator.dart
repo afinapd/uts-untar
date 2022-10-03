@@ -3,7 +3,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:uts/Data/storys.dart';
 import 'package:uts/Screens/Account_Screen.dart';
 import 'package:uts/Screens/Home_Screen.dart';
-import 'package:uts/Screens/Likes_Screen.dart';
+import 'package:uts/Screens/Shop_Screen.dart';
 import 'package:uts/Screens/Search_Screen.dart';
 import 'package:uts/Screens/Reel_Screen.dart';
 import 'package:uts/Theme/Colors.dart';
@@ -87,10 +87,40 @@ class _NavigatorScreenState extends State<NavigatorScreen> {
     } else if (pageindex == 3) {
       return AppBar(
         backgroundColor: black,
-        centerTitle: true,
-        title: const Text(
-          "likes",
-          style: TextStyle(color: white, fontSize: 25),
+        title: Row(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Row(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Text(
+                  "Shop",
+                  style: TextStyle(color: white, fontSize: 20),
+                ),
+              ],
+            ),
+            Row(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                SvgPicture.asset(
+                  'assets/images/save_icon.svg',
+                  height: 23,
+                ),
+                SizedBox(
+                  width: 20,
+                ),
+                SvgPicture.asset(
+                  'assets/images/drawer_icon.svg',
+                  height: 20,
+                  color: white,
+                ),
+                SizedBox(
+                  width: 5,
+                ),
+              ],
+            ),
+          ],
         ),
       );
     } else if (pageindex == 4) {
@@ -208,7 +238,7 @@ class _NavigatorScreenState extends State<NavigatorScreen> {
                                 border: Border.all(color: black, width: 1),
                                 shape: BoxShape.circle,
                                 image: DecorationImage(
-                                    image: NetworkImage(profile),
+                                    image: AssetImage(profile),
                                     fit: BoxFit.cover)),
                           ),
                         ),

@@ -28,7 +28,7 @@ class StoryBanner extends StatelessWidget {
                           border: Border.all(color: black, width: 2),
                           shape: BoxShape.circle,
                           image: DecorationImage(
-                              image: NetworkImage(profile), fit: BoxFit.cover)),
+                              image: AssetImage(profile), fit: BoxFit.cover)),
                     ),
                     Positioned(
                         bottom: 0,

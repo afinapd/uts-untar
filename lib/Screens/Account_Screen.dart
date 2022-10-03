@@ -179,7 +179,7 @@ class ProfileHeader extends StatelessWidget {
                 decoration: BoxDecoration(
                     shape: BoxShape.circle,
                     image: DecorationImage(
-                        image: NetworkImage(profile), fit: BoxFit.cover)),
+                        image: AssetImage(profile), fit: BoxFit.cover)),
               ),
               Column(
                 children: [
@@ -342,7 +342,7 @@ class ProfileHeader extends StatelessWidget {
                             border: Border.all(color: black, width: 2),
                             shape: BoxShape.circle,
                             image: DecorationImage(
-                                image: NetworkImage(profile),
+                                image: AssetImage(highlight),
                                 fit: BoxFit.cover)),
                       ),
                     ),
@@ -351,7 +351,7 @@ class ProfileHeader extends StatelessWidget {
                     height: 7,
                   ),
                   Text(
-                    'me',
+                    'traveling',
                     style: TextStyle(
                         overflow: TextOverflow.ellipsis,
                         color: white,
