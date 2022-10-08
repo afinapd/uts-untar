@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:uts/Theme/Colors.dart';
 import 'package:uts/Data/search.dart';
 
-class LikesScreen extends StatelessWidget {
-  const LikesScreen({Key? key}) : super(key: key);
+class ShopScreen extends StatelessWidget {
+  const ShopScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

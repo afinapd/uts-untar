@@ -32,7 +32,7 @@ class _NavigatorScreenState extends State<NavigatorScreen> {
       HomeScreen(),
       SearchScreen(),
       ReelScreen(),
-      LikesScreen(),
+      ShopScreen(),
       AccountScreen(),
     ];
     return IndexedStack(
