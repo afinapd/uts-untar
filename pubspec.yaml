@@ -69,6 +69,7 @@ flutter:
     - assets/images/stories/
     - assets/images/search/
     - assets/images/shop/
+    - assets/images/songs/
   fonts:
     - family: Billabong
       fonts:

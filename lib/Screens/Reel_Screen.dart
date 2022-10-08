@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:uts/Data/Reels_json.dart';
+import 'package:uts/Data/reels_json.dart';
 import 'package:uts/Data/search.dart';
 import 'package:uts/Data/storys.dart';
 import 'package:uts/Theme/Colors.dart';
@@ -39,7 +39,7 @@ class ReelItem extends StatelessWidget {
           decoration: BoxDecoration(
             color: black,
             image: DecorationImage(
-                image: NetworkImage(
+                image: AssetImage(
                   ReelsData[index]['ContentImg'], //ContentImg
                 ),
                 fit: BoxFit.cover),
@@ -105,7 +105,7 @@ class ReelItem extends StatelessWidget {
                               decoration: BoxDecoration(
                                   shape: BoxShape.circle,
                                   image: DecorationImage(
-                                      image: NetworkImage(
+                                      image: AssetImage(
                                         ReelsData[index]['UserImg'], //Username
                                       ),
                                       fit: BoxFit.cover)),
@@ -141,7 +141,7 @@ class ReelItem extends StatelessWidget {
                                   color: white,
                                 ),
                               ),
-                            ),
+                            )
                           ],
                         ),
                         const SizedBox(
@@ -274,7 +274,7 @@ class ReelItem extends StatelessWidget {
                                 borderRadius:
                                     (BorderRadius.all(Radius.circular(7))),
                                 image: DecorationImage(
-                                    image: NetworkImage(
+                                    image: AssetImage(
                                       ReelsData[index]['MusicImg'],
                                     ),
                                     fit: BoxFit.cover)),
